@@ -6,7 +6,7 @@ const Modal = ({ setOpenModal }) => {
             // onClick={() => setOpenModal(false)}
             className='backdrop-blur fixed inset-0 z-50 overflow-hidden'>
             {/* <div className='w-screen h-screen backdrop-blur z-0'></div> */}
-            <section className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl border border-yellow-600 w-96'>
+            <section className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl border border-yellow-600 w-80 md:w-96'>
                 <div class="py-2 lg:py-6 px-4 mx-auto relative">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
                     <button
