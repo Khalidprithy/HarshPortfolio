@@ -25,16 +25,16 @@ const Navbar = () => {
                         </svg>
                     </button>
 
-                    <HiOutlineCode className='text-3xl hidden md:block' />
+                    <HiOutlineCode className='text-3xl hidden lg:block' />
 
-                    <h4 className='text-2xl font-semibold'>Harsh Gupta</h4>
+                    <h4 className='text-2xl md:text-xl lg:text-2xl font-semibold min-w-[120px]'>Harsh Gupta</h4>
                 </div>
                 {
                     openMenu &&
-                    <div className='block md:hidden absolute top-16 md:top-20 left-0 bg-goblin-600 p-5 mt-2 rounded-lg transition ease-in-out delay-150 duration-300 z-20'>
+                    <div className='block md:hidden absolute top-16 md:top-20 left-0 bg-green-600 p-5 mt-2 rounded-lg transition ease-in-out delay-150 duration-300 z-20'>
                         <ul className='flex flex-col items-center gap-4 mx-1 md:mx-5'>
                             {
-                                menus.map(menu => <li> <a className='text-xl text-goblin-100 font-semibold hover:text-green-500 capitalize' href={menu.path}>{menu.name}</a></li>)
+                                menus.map(menu => <li> <a className='text-xl text-goblin-100 font-semibold hover:text-green-50 capitalize' href={menu.path}>{menu.name}</a></li>)
                             }
                         </ul>
                     </div>
