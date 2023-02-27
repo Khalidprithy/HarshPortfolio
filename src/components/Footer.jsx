@@ -2,36 +2,29 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer class="font-mono p-4 bg-teal-50 rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900">
-            <div class="sm:flex sm:items-center sm:justify-between">
+        <footer className="font-mono p-4 border border-green-600 rounded-lg shadow md:px-6 md:py-8 dark:bg-gray-900">
+            <div className="sm:flex sm:items-center sm:justify-between">
                 <a href="https://
-                Saitama.com/" class="flex items-center mb-4 sm:mb-0">
+                Saitama.com/" className="flex items-center mb-4 sm:mb-0">
                     {/* <img src="https://
-                    Saitama.com/docs/images/logo.svg" class="h-8 mr-3" alt="
+                    Saitama.com/docs/images/logo.svg" className="h-8 mr-3" alt="
                     Saitama Logo" /> */}
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                        サイタマ
+                    <span className="self-center text-2xl font-semibold whitespace-nowrap">
+                        Harsh Gupta
                     </span>
                 </a>
-                <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+                <ul className="flex flex-col items-right mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
                     <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+                        <a href="harshgolu82@gmail.com" className="mr-4 hover:underline md:mr-6 "> harshgolu82@gmail.com</a>
                     </li>
                     <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#" class="mr-4 hover:underline md:mr-6 ">Licensing</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Contact</a>
+                        <a href="#" className="mr-4 hover:underline md:mr-6">+91 8077117709</a>
                     </li>
                 </ul>
             </div>
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 3 <a href="https://
-            Saitama.com/" class="hover:underline text-yellow-400 font-semibold">
-                Saitama™</a>. All Rights Reserved.
+            <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 " />
+            <span className="block text-lg text-gray-500 sm:text-center dark:text-gray-400">© 3 <a href="https://devkbin.netlify.app/" className="hover:underline text-goblin-700 font-semibold">
+                Dev.Kbin™</a>. All Rights Reserved.
             </span>
         </footer>
     );

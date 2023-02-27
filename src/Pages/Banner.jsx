@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Profile from '../images/saitama.png'
+import harsh from '../images/harsh.jpeg'
 import HandModal from './HandModal';
 import Modal from './Modal';
 
@@ -11,20 +12,23 @@ const Banner = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-center font-mono max-w-screen-xl mx-auto relative'>
             <div className='text-center p-10 mx-auto order-2 md:order-1'>
-                <h4 className='text-3xl text-yellow-500 font-semibold'>Saitama (サイタマ)</h4>
-                <h6 className='text-xl text-orange-500 font-semibold'>Junior Backend Developer</h6>
-                <p className='font-mono'>Hi there! My name is Saitama (サイタマ), and I am a junior backend developer with a strong foundation in Python and Django. I am passionate about building high-quality web applications and have 2 years of experience working on various projects. My skills include Python, Django, SQL, Postgres, database management, API development, testing, etc, and I am always eager to learn more.
+                <h4 className='text-3xl text-golden-500 font-semibold'>Harsh Gupta </h4>
+                <h6 className='text-xl text-green-500 font-semibold'>Junior Backend Developer</h6>
+                <p className='font-mono'>Experienced Software engineer with more than one year of experience, skilled in Python, Django, REST
+                    APIs, SQL Databases, AWS and Docker. I enjoy working in a collaborative environment building software
+                    that solves real problems that people care about. I am self-motivated and I possess good communication
+                    skills
                 </p>
-                <div className='flex justify-center gap-4 mt-6'>
-                    <button
-                        onClick={() => setOpenModal(true)}
-                        className='bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded'>Contact Me</button>
+                <div className='flex justify-center gap-4 mt-6 bg'>
                     <button
                         onClick={() => setOpenModalHand(true)}
-                        className='bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded'>Get Punched</button>
+                        className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded'>Contact Info</button>
+                    <button
+                        onClick={() => setOpenModal(true)}
+                        className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded'>Send Message</button>
                 </div>
             </div>
-            <img className='rounded-lg mx-auto order-1 md:order-2' src={Profile} alt="" />
+            <img className='w-72 md:w-2/3 rounded-full p-4 mx-auto order-1 md:order-2' src={harsh} alt="" />
             {
                 openModal && (
                     <Modal

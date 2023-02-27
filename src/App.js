@@ -1,5 +1,6 @@
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import Achievement from './Pages/Achievement';
 import Banner from './Pages/Banner';
 import Education from './Pages/Education';
 import Experience from './Pages/Experience';
@@ -9,13 +10,14 @@ import SocialMedia from './Pages/SocialMedia';
 
 function App() {
   return (
-    <div className='m-2 md:m-4'>
+    <div className='p-2 md:p-4'>
       <Navbar />
       <Banner />
       <MySkills />
       <Experience />
       <Projects />
       <Education />
+      <Achievement />
       <SocialMedia />
       <Footer />
     </div>
